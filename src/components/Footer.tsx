@@ -56,15 +56,15 @@ const Footer = () => {
             <ul className="space-y-3">
               <li className="flex items-center">
                 <Mail size={16} className="mr-3 text-orange-500" />
-                <span className="text-gray-300">info@adigitallife.com</span>
+                <span className="text-gray-300">adigitallifetechnology@.com</span>
               </li>
               <li className="flex items-center">
                 <Phone size={16} className="mr-3 text-orange-500" />
-                <span className="text-gray-300">+1 (555) 123-4567</span>
+                <span className="text-gray-300">+91-8837613270</span>
               </li>
               <li className="flex items-start">
                 <MapPin size={16} className="mr-3 text-orange-500 mt-1" />
-                <span className="text-gray-300">123 Digital Street<br />Tech City, TC 12345</span>
+                <span className="text-gray-300">New Delhi</span>
               </li>
             </ul>
           </div>
