@@ -24,7 +24,7 @@ const About = () => {
       description: 'Focused on delivering measurable outcomes that drive business growth.'
     }
   ];
-
+/*
   const team = [
     {
       name: 'John Smith',
@@ -51,7 +51,7 @@ const About = () => {
       description: 'Marketing strategist driving digital growth and engagement.'
     }
   ];
-
+*/
   return (
     <div>
       {/* Hero Section */}
@@ -69,7 +69,7 @@ const About = () => {
               About ADigitallife Technology
             </h1>
             <p className="text-xl md:text-2xl max-w-3xl mx-auto leading-relaxed">
-              Empowering businesses through innovative digital solutions since 2019
+              Empowering businesses through innovative digital solutions since 2023
             </p>
           </div>
         </div>
@@ -86,7 +86,7 @@ const About = () => {
               <p className="text-lg text-gray-600 mb-6 leading-relaxed">
                 Founded with a vision to bridge the gap between traditional business practices 
                 and digital innovation, ADigitallife Technology has been at the forefront of 
-                digital transformation for over 5 years.
+                digital transformation for over 2 years.
               </p>
               <p className="text-lg text-gray-600 mb-6 leading-relaxed">
                 We started as a small team of passionate developers and have grown into a 
@@ -94,7 +94,7 @@ const About = () => {
                 digital future with confidence.
               </p>
               <p className="text-lg text-gray-600 leading-relaxed">
-                Today, we're proud to have completed over 500 projects, served 200+ clients, 
+                Today, we're proud to have completed over 20+ projects, served 20+ clients, 
                 and continue to push the boundaries of what's possible in digital technology.
               </p>
             </div>
@@ -167,46 +167,6 @@ const About = () => {
                 <p className="text-gray-600 leading-relaxed">
                   {value.description}
                 </p>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
-
-      {/* Team Section */}
-      <section className="py-20 bg-gray-50">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center mb-16">
-            <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
-              Meet Our Team
-            </h2>
-            <p className="text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed">
-              The talented individuals driving our success
-            </p>
-          </div>
-
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
-            {team.map((member, index) => (
-              <div
-                key={index}
-                className="bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-xl transition-shadow duration-300"
-              >
-                <img
-                  src={member.image}
-                  alt={member.name}
-                  className="w-full h-64 object-cover"
-                />
-                <div className="p-6">
-                  <h3 className="text-xl font-semibold text-gray-900 mb-1">
-                    {member.name}
-                  </h3>
-                  <p className="text-orange-500 font-medium mb-3">
-                    {member.role}
-                  </p>
-                  <p className="text-gray-600 text-sm leading-relaxed">
-                    {member.description}
-                  </p>
-                </div>
               </div>
             ))}
           </div>
