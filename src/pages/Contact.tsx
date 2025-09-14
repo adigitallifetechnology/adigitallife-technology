@@ -54,26 +54,23 @@ const Contact = () => {
     {
       icon: <Mail className="w-6 h-6" />,
       title: 'Email Us',
-      details: 'info@adigitallife.com',
-      subDetails: 'support@adigitallife.com'
+      details: 'adigitallifetechnology@gmail.com'
     },
     {
       icon: <Phone className="w-6 h-6" />,
       title: 'Call Us',
-      details: '+1 (555) 123-4567',
-      subDetails: '+1 (555) 987-6543'
+      details: '+91-8837613270'
     },
     {
       icon: <MapPin className="w-6 h-6" />,
       title: 'Visit Us',
-      details: '123 Digital Street',
-      subDetails: 'Tech City, TC 12345'
+      details: 'New Delhi'
     },
     {
       icon: <Clock className="w-6 h-6" />,
       title: 'Business Hours',
       details: 'Mon - Fri: 9:00 AM - 6:00 PM',
-      subDetails: 'Sat: 10:00 AM - 4:00 PM'
+      subDetails: 'Sat - Sun: 10:00 AM - 4:00 PM'
     }
   ];
 
@@ -276,7 +273,7 @@ const Contact = () => {
                   <div className="text-center text-white">
                     <MapPin className="w-12 h-12 mx-auto mb-2" />
                     <p className="font-semibold">Our Office Location</p>
-                    <p className="text-sm opacity-90">123 Digital Street, Tech City</p>
+                    <p className="text-sm opacity-90">New Delhi</p>
                   </div>
                 </div>
               </div>
