@@ -1,4 +1,3 @@
-import React from 'react';
 import { Code, Smartphone, TrendingUp, Search, Shield, Users, Server, Palette, BarChart3, Globe, Lock, Zap } from 'lucide-react';
 
 const Services = () => {

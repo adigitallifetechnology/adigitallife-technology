@@ -1,9 +1,7 @@
-import React, { useState } from 'react';
-import { ExternalLink, Star, Quote, Filter, Globe, Smartphone, TrendingUp, Search, ShoppingCart, Scale, Brain, Calendar, Heart, Coffee, Music, Camera, MapPin } from 'lucide-react';
+import { ExternalLink, Star, Quote, Globe } from 'lucide-react';
 
 const Portfolio = () => {
-  const [activeFilter, setActiveFilter] = useState('all');
-
+  // No filters or categories, just show all projects
   const projects = [
     {
       id: 1,
@@ -15,7 +13,7 @@ const Portfolio = () => {
       iconColor: 'text-orange-500',
       bgColor: 'bg-orange-50',
       description: 'Modern e-commerce platform with seamless shopping experience and inventory management.',
-      services: ['Web Development', 'E-commerce', 'SEO']
+  services: ['Web Development', 'Web App Development']
     },
     {
       id: 2,
@@ -27,7 +25,7 @@ const Portfolio = () => {
       iconColor: 'text-orange-500',
       bgColor: 'bg-orange-50',
       description: 'Professional legal services website with case management and client portal.',
-      services: ['Web Development', 'CMS', 'Digital Marketing']
+  services: ['Web Development', 'Web App Development']
     },
     {
       id: 3,
@@ -39,7 +37,7 @@ const Portfolio = () => {
       iconColor: 'text-orange-500',
       bgColor: 'bg-orange-50',
       description: 'AI-powered writing assistant with advanced natural language processing capabilities.',
-      services: ['Web App Development', 'AI Integration', 'Cloud Solutions']
+  services: ['Web Development', 'Web App Development']
     },
     {
       id: 4,
@@ -51,7 +49,7 @@ const Portfolio = () => {
       iconColor: 'text-orange-500',
       bgColor: 'bg-orange-50',
       description: 'Dynamic event management platform with booking system and gallery showcase.',
-      services: ['Web Development', 'Event Management', 'SEO']
+  services: ['Web Development', 'Web App Development']
     },
     {
       id: 5,
@@ -63,7 +61,7 @@ const Portfolio = () => {
       iconColor: 'text-orange-500',
       bgColor: 'bg-orange-50',
       description: 'Healthcare website with appointment booking and patient management system.',
-      services: ['Web Development', 'Healthcare Solutions', 'Digital Marketing']
+  services: ['Web Development', 'Web App Development']
     },
     {
       id: 6,
@@ -75,7 +73,7 @@ const Portfolio = () => {
       iconColor: 'text-orange-500',
       bgColor: 'bg-orange-50',
       description: 'Spice company website with product catalog and wholesale ordering system.',
-      services: ['E-commerce Development', 'SEO', 'Digital Marketing']
+  services: ['Web Development', 'Web App Development']
     },
     {
       id: 7,
@@ -87,7 +85,7 @@ const Portfolio = () => {
       iconColor: 'text-orange-500',
       bgColor: 'bg-orange-50',
       description: 'Music production website with audio streaming and artist portfolio features.',
-      services: ['Web Development', 'Audio Integration', 'SEO']
+  services: ['Web Development', 'Web App Development']
     },
     {
       id: 8,
@@ -99,7 +97,7 @@ const Portfolio = () => {
       iconColor: 'text-orange-500',
       bgColor: 'bg-orange-50',
       description: 'Photography portfolio with booking system and client gallery management.',
-      services: ['Web Development', 'Portfolio Design', 'Digital Marketing']
+  services: ['Web Development', 'Web App Development']
     },
     {
       id: 9,
@@ -111,7 +109,7 @@ const Portfolio = () => {
       iconColor: 'text-orange-500',
       bgColor: 'bg-orange-50',
       description: 'Travel booking platform with tour packages and itinerary management.',
-      services: ['Web Development', 'Booking System', 'SEO']
+  services: ['Web Development', 'Web App Development']
     }
   ];
 
@@ -154,15 +152,8 @@ const Portfolio = () => {
     }
   ];
 
-  const filters = [
-    { id: 'all', label: 'All Projects', icon: <Globe className="w-4 h-4" /> },
-    { id: 'website', label: 'Websites', icon: <Globe className="w-4 h-4" /> },
-    { id: 'webapp', label: 'Web Apps', icon: <Smartphone className="w-4 h-4" /> }
-  ];
-
-  const filteredProjects = activeFilter === 'all' 
-    ? projects 
-    : projects.filter(project => project.type === activeFilter);
+  // Remove filters, just show all projects
+  const filteredProjects = projects;
 
   return (
     <div>
@@ -190,23 +181,7 @@ const Portfolio = () => {
       {/* Portfolio Section */}
       <section className="py-20 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          {/* Filter Buttons */}
-          <div className="flex flex-wrap justify-center gap-4 mb-12">
-            {filters.map((filter) => (
-              <button
-                key={filter.id}
-                onClick={() => setActiveFilter(filter.id)}
-                className={`flex items-center space-x-2 px-6 py-3 rounded-full font-medium transition-all duration-300 ${
-                  activeFilter === filter.id
-                    ? 'bg-orange-500 text-white shadow-lg transform scale-105'
-                    : 'bg-gray-100 text-gray-700 hover:bg-gray-200'
-                }`}
-              >
-                {filter.icon}
-                <span>{filter.label}</span>
-              </button>
-            ))}
-          </div>
+          {/* Filter Buttons removed */}
 
           {/* Projects Grid */}
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
