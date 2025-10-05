@@ -1,4 +1,5 @@
 import { ExternalLink, Star, Quote, Globe } from 'lucide-react';
+import { Link } from 'react-router-dom';
 
 const Portfolio = () => {
   // No filters or categories, just show all projects
@@ -311,13 +312,13 @@ const Portfolio = () => {
             Let's discuss how we can create an amazing digital solution for your business, 
             just like we did for these successful clients.
           </p>
-          <a
-            href="/contact"
+          <Link
+            to="/contact"
             className="bg-orange-500 hover:bg-orange-600 text-white px-8 py-4 rounded-lg font-semibold text-lg transition-all duration-200 transform hover:scale-105 inline-flex items-center"
           >
             Start Your Project
             <ExternalLink className="ml-2 w-5 h-5" />
-          </a>
+          </Link>
         </div>
       </section>
     </div>
