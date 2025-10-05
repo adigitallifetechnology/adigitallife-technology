@@ -6,13 +6,13 @@ const Portfolio = () => {
     {
       id: 1,
       title: 'Ovihams',
-      category: 'E-commerce',
+      category: 'Healthcare',
       type: 'website',
       url: 'https://ovihams.com/',
       icon: <Globe className="w-16 h-16" />,
       iconColor: 'text-orange-500',
       bgColor: 'bg-orange-50',
-      description: 'Modern e-commerce platform with seamless shopping experience and inventory management.',
+    //  description: 'Modern portfolio website with seamless shopping experience and inventory management.',
   services: ['Web Development', 'Web App Development']
     },
     {
@@ -24,20 +24,20 @@ const Portfolio = () => {
       icon: <Globe className="w-16 h-16" />,
       iconColor: 'text-orange-500',
       bgColor: 'bg-orange-50',
-      description: 'Professional legal services website with case management and client portal.',
-  services: ['Web Development', 'Web App Development']
+     // description: 'Professional legal services website with case management and client portal.',
+  services: ['Web Development']
     },
     {
       id: 3,
       title: 'Forescribe',
-      category: 'AI/Technology',
+      category: 'Product Design',
       type: 'webapp',
       url: 'https://www.forescribe.ai/',
       icon: <Globe className="w-16 h-16" />,
       iconColor: 'text-orange-500',
       bgColor: 'bg-orange-50',
-      description: 'AI-powered writing assistant with advanced natural language processing capabilities.',
-  services: ['Web Development', 'Web App Development']
+     // description: 'AI-powered writing assistant with advanced natural language processing capabilities.',
+  services: ['Web App Development']
     },
     {
       id: 4,
@@ -48,8 +48,8 @@ const Portfolio = () => {
       icon: <Globe className="w-16 h-16" />,
       iconColor: 'text-orange-500',
       bgColor: 'bg-orange-50',
-      description: 'Dynamic event management platform with booking system and gallery showcase.',
-  services: ['Web Development', 'Web App Development']
+     // description: 'Dynamic event management platform with booking system and gallery showcase.',
+  services: ['Web Development']
     },
     {
       id: 5,
@@ -60,44 +60,32 @@ const Portfolio = () => {
       icon: <Globe className="w-16 h-16" />,
       iconColor: 'text-orange-500',
       bgColor: 'bg-orange-50',
-      description: 'Healthcare website with appointment booking and patient management system.',
-  services: ['Web Development', 'Web App Development']
+     // description: 'Healthcare website with appointment booking and patient management system.',
+  services: ['Web Development']
     },
     {
       id: 6,
       title: 'Shahji Spices',
-      category: 'Food & Beverage',
+      category: 'E-Commerce',
       type: 'website',
       url: 'https://shahjispices.com/',
       icon: <Globe className="w-16 h-16" />,
       iconColor: 'text-orange-500',
       bgColor: 'bg-orange-50',
-      description: 'Spice company website with product catalog and wholesale ordering system.',
-  services: ['Web Development', 'Web App Development']
-    },
-    {
-      id: 7,
-      title: 'Hi-Tone Boss',
-      category: 'Music & Audio',
-      type: 'website',
-      url: 'https://www.hitoneboss.com/',
-      icon: <Globe className="w-16 h-16" />,
-      iconColor: 'text-orange-500',
-      bgColor: 'bg-orange-50',
-      description: 'Music production website with audio streaming and artist portfolio features.',
-  services: ['Web Development', 'Web App Development']
+    //  description: 'Spice company website with product catalog and wholesale ordering system.',
+  services: ['Web Development']
     },
     {
       id: 8,
       title: 'Chill Memories',
-      category: 'Photography',
+      category: 'Tours & Travels',
       type: 'website',
       url: 'https://chillmemories.com/',
       icon: <Globe className="w-16 h-16" />,
       iconColor: 'text-orange-500',
       bgColor: 'bg-orange-50',
-      description: 'Photography portfolio with booking system and client gallery management.',
-  services: ['Web Development', 'Web App Development']
+    //  description: 'Photography portfolio with booking system and client gallery management.',
+  services: ['Web Development']
     },
     {
       id: 9,
@@ -108,8 +96,8 @@ const Portfolio = () => {
       icon: <Globe className="w-16 h-16" />,
       iconColor: 'text-orange-500',
       bgColor: 'bg-orange-50',
-      description: 'Travel booking platform with tour packages and itinerary management.',
-  services: ['Web Development', 'Web App Development']
+    //  description: 'Travel booking platform with tour packages and itinerary management.',
+  services: ['Web Development']
     }
   ];
 
