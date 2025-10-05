@@ -29,7 +29,7 @@ const About = () => {
     {
       name: 'Harsh Sood',
       role: 'Co-Founder',
-      image: '../public/1668739915770.jpeg',
+      image: '/1668739915770.jpeg',
       description: 'Visionary leader driving digital transformation with innovative solutions.',
       linkedin: 'https://www.linkedin.com/in/harsh-sood-1bb971200/',
       email: 'soodharsh3@gmail.com',
@@ -38,7 +38,7 @@ const About = () => {
     {
       name: 'Ankit Kumar Soni',
       role: 'Co-Founder',
-      image: '../public/1730895053253.jpeg',
+      image: '/1730895053253.jpeg',
       description: 'Technical expert specializing in scalable enterprise solutions.',
       linkedin: 'https://www.linkedin.com/in/ankit-k-soni/',
       email: 'ankitsoni6153@gmail.com',

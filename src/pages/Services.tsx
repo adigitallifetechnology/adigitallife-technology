@@ -1,4 +1,5 @@
 import { Code, Smartphone, TrendingUp, Search, Shield, Users, Server, Palette, BarChart3, Globe, Lock, Zap } from 'lucide-react';
+import { Link } from 'react-router-dom';
 
 const Services = () => {
   const services = [
@@ -220,12 +221,12 @@ const Services = () => {
           <p className="text-xl mb-8 max-w-3xl mx-auto leading-relaxed">
             Let's discuss how we can help bring your vision to life with our comprehensive digital solutions.
           </p>
-          <a
-            href="/contact"
+          <Link
+            to="/contact"
             className="bg-white text-orange-500 hover:bg-gray-100 px-8 py-4 rounded-lg font-semibold text-lg transition-all duration-200 transform hover:scale-105 inline-block"
           >
             Get Free Consultation
-          </a>
+          </Link>
         </div>
       </section>
     </div>
