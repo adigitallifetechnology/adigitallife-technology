@@ -28,21 +28,21 @@ const About = () => {
   const team = [
     {
       name: 'Harsh Sood',
-      role: 'Co-Founder & CEO',
+      role: 'Co-Founder',
       image: 'https://images.pexels.com/photos/2379004/pexels-photo-2379004.jpeg?auto=compress&cs=tinysrgb&w=400',
       description: 'Visionary leader driving digital transformation with innovative solutions.',
-      linkedin: 'https://www.linkedin.com/in/harsh-sood',
-      email: 'adigitallifetechnology@gmail.com',
-      phone: '+91-7318506153, +91-8837613270'
+      linkedin: 'https://www.linkedin.com/in/harsh-sood-1bb971200/',
+      email: 'soodharsh3@gmail.com',
+      phone: '+91-8837613270'
     },
     {
       name: 'Ankit Kumar Soni',
-      role: 'Co-Founder & CTO',
+      role: 'Co-Founder',
       image: 'https://images.pexels.com/photos/2182970/pexels-photo-2182970.jpeg?auto=compress&cs=tinysrgb&w=400',
       description: 'Technical expert specializing in scalable enterprise solutions.',
-      linkedin: 'https://www.linkedin.com/in/ankit-kumar-soni',
-      email: 'adigitallifetechnology@gmail.com',
-      phone: '+91-7318506153, +91-8837613270'
+      linkedin: 'https://www.linkedin.com/in/ankit-k-soni/',
+      email: 'ankitsoni6153@gmail.com',
+      phone: '+91-7318506153'
     }
   ];
 /*
