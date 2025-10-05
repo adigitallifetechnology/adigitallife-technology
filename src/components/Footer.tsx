@@ -1,5 +1,5 @@
 import React from 'react';
-import { Mail, Phone, MapPin, Facebook, Twitter, Linkedin, Instagram } from 'lucide-react';
+import { Mail, Phone, MapPin } from 'lucide-react';
 
 const Footer = () => {
   return (
@@ -23,20 +23,7 @@ const Footer = () => {
               Empowering businesses through innovative digital solutions. We transform ideas into 
               powerful digital experiences that drive growth and success.
             </p>
-            <div className="flex space-x-4">
-              <a href="#" className="text-gray-300 hover:text-orange-500 transition-colors duration-200">
-                <Facebook size={20} />
-              </a>
-              <a href="#" className="text-gray-300 hover:text-orange-500 transition-colors duration-200">
-                <Twitter size={20} />
-              </a>
-              <a href="#" className="text-gray-300 hover:text-orange-500 transition-colors duration-200">
-                <Linkedin size={20} />
-              </a>
-              <a href="#" className="text-gray-300 hover:text-orange-500 transition-colors duration-200">
-                <Instagram size={20} />
-              </a>
-            </div>
+            {/* Social icons removed */}
           </div>
 
           {/* Quick Links */}
@@ -46,6 +33,7 @@ const Footer = () => {
               <li><a href="/" className="text-gray-300 hover:text-orange-500 transition-colors duration-200">Home</a></li>
               <li><a href="/about" className="text-gray-300 hover:text-orange-500 transition-colors duration-200">About</a></li>
               <li><a href="/services" className="text-gray-300 hover:text-orange-500 transition-colors duration-200">Services</a></li>
+              <li><a href="/portfolio" className="text-gray-300 hover:text-orange-500 transition-colors duration-200">Portfolio</a></li>
               <li><a href="/contact" className="text-gray-300 hover:text-orange-500 transition-colors duration-200">Contact</a></li>
             </ul>
           </div>
@@ -60,7 +48,7 @@ const Footer = () => {
               </li>
               <li className="flex items-center">
                 <Phone size={16} className="mr-3 text-orange-500" />
-                <span className="text-gray-300">+91-7318506153</span>
+                <span className="text-gray-300">+91-7318506153, +91-8837613270</span>
               </li>
               <li className="flex items-start">
                 <MapPin size={16} className="mr-3 text-orange-500 mt-1" />
