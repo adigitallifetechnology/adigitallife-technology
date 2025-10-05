@@ -33,7 +33,7 @@ const About = () => {
       description: 'Visionary leader driving digital transformation with innovative solutions.',
       linkedin: 'https://www.linkedin.com/in/harsh-sood',
       email: 'adigitallifetechnology@gmail.com',
-      phone: '+91-7318506153'
+      phone: '+91-7318506153, +91-8837613270'
     },
     {
       name: 'Ankit Kumar Soni',
@@ -42,7 +42,7 @@ const About = () => {
       description: 'Technical expert specializing in scalable enterprise solutions.',
       linkedin: 'https://www.linkedin.com/in/ankit-kumar-soni',
       email: 'adigitallifetechnology@gmail.com',
-      phone: '+91-7318506153'
+      phone: '+91-7318506153, +91-8837613270'
     }
   ];
 /*
