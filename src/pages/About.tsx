@@ -29,7 +29,7 @@ const About = () => {
     {
       name: 'Harsh Sood',
       role: 'Co-Founder',
-      image: 'https://images.pexels.com/photos/2379004/pexels-photo-2379004.jpeg?auto=compress&cs=tinysrgb&w=400',
+      image: '/public/1668739915770.jpeg',
       description: 'Visionary leader driving digital transformation with innovative solutions.',
       linkedin: 'https://www.linkedin.com/in/harsh-sood-1bb971200/',
       email: 'soodharsh3@gmail.com',
