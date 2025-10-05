@@ -1,5 +1,6 @@
-import { ExternalLink, Star, Quote, Globe } from 'lucide-react';
+import { ExternalLink, Globe } from 'lucide-react';
 import { Link } from 'react-router-dom';
+import TestimonialSlider from '../components/TestimonialSlider';
 
 const Portfolio = () => {
   // No filters or categories, just show all projects
@@ -266,32 +267,7 @@ const Portfolio = () => {
             </p>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-            {testimonials.map((testimonial) => (
-              <div
-                key={testimonial.id}
-                className="bg-white p-8 rounded-xl shadow-lg hover:shadow-xl transition-shadow duration-300 relative"
-              >
-                <div className="absolute top-4 right-4 text-orange-500">
-                  <Quote className="w-8 h-8 opacity-20" />
-                </div>
-                
-                <div className="mb-4">
-                  <h3 className="text-xl font-bold text-orange-500 mb-2">{testimonial.company}</h3>
-                </div>
-                
-                <div className="flex mb-4">
-                  {[...Array(testimonial.rating)].map((_, index) => (
-                    <Star key={index} className="w-5 h-5 text-yellow-400 fill-current" />
-                  ))}
-                </div>
-                
-                <p className="text-gray-600 leading-relaxed italic">
-                  "{testimonial.text}"
-                </p>
-              </div>
-            ))}
-          </div>
+          <TestimonialSlider testimonials={testimonials} />
         </div>
       </section>
 
