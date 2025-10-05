@@ -225,7 +225,7 @@ const Services = () => {
             href="/contact"
             className="bg-white text-orange-500 hover:bg-gray-100 px-8 py-4 rounded-lg font-semibold text-lg transition-all duration-200 transform hover:scale-105 inline-block"
           >
-            Get a Free Consultation
+            Get Free Consultation
           </a>
         </div>
       </section>
