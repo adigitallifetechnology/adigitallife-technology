@@ -48,30 +48,39 @@ const Home = () => {
       {/* Hero Section */}
       <section className="relative bg-brand-black text-white py-20 overflow-hidden">
         <div className="absolute inset-0 bg-black opacity-60"></div>
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center relative z-10">
-            <h1 className="text-4xl md:text-6xl font-bold mb-6 leading-tight">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
+          <div className="relative z-10 order-2 md:order-1">
+            <h1 className="text-4xl md:text-6xl font-bold mb-4 leading-tight">
               Transform Your Business
               <span className="block text-brand-orange">Digitally</span>
             </h1>
-            <p className="text-xl md:text-2xl mb-8 max-w-3xl mx-auto leading-relaxed">
-              We create innovative web development, SEO, and app solutions that drive growth, enhance user experience, and propel your business into the future.
+            <p className="text-lg md:text-xl mb-6 max-w-3xl leading-relaxed">
+              We build beautiful websites, high-performing web apps and growth-focused SEO strategies that increase traffic, leads and revenue.
             </p>
-            <div className="flex flex-col sm:flex-row gap-4 justify-center">
+            <div className="flex flex-col sm:flex-row gap-4 justify-start">
               <Link
                 to="/contact"
-                className="bg-brand-orange hover:bg-orange-600 text-white px-8 py-3 rounded-lg font-semibold transition-all duration-200 transform hover:scale-105 inline-flex items-center justify-center"
+                className="bg-brand-orange hover:bg-orange-600 text-white px-6 py-3 rounded-lg font-semibold transition-all duration-200 transform hover:scale-105 inline-flex items-center justify-center"
               >
                 Get Started
                 <ArrowRight className="ml-2 w-5 h-5" />
               </Link>
               <Link
                 to="/services"
-                className="border-2 border-white hover:bg-brand-orange hover:text-white text-white px-8 py-3 rounded-lg font-semibold transition-all duration-200 transform hover:scale-105"
+                className="border-2 border-white hover:bg-brand-orange hover:text-white text-white px-6 py-3 rounded-lg font-semibold transition-all duration-200 transform hover:scale-105"
               >
-                Our Services
+                Explore Services
               </Link>
             </div>
+            <div className="mt-8 flex flex-wrap gap-3">
+              <span className="bg-brand-orange/10 text-brand-orange px-3 py-1 rounded-full text-sm">Web Development</span>
+              <span className="bg-brand-orange/10 text-brand-orange px-3 py-1 rounded-full text-sm">SEO</span>
+              <span className="bg-brand-orange/10 text-brand-orange px-3 py-1 rounded-full text-sm">Cybersecurity</span>
+              <span className="bg-brand-orange/10 text-brand-orange px-3 py-1 rounded-full text-sm">Apps</span>
+            </div>
+          </div>
+          <div className="order-1 md:order-2 flex items-center justify-center">
+            <img src="/hero-illustration.svg" alt="Hero illustration" className="w-full max-w-lg" />
           </div>
         </div>
       </section>
@@ -107,6 +116,40 @@ const Home = () => {
                 </p>
               </div>
             ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Features Section */}
+      <section className="py-16 bg-white">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <h2 className="text-3xl font-bold text-gray-900 mb-6">Why clients choose us</h2>
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+            <div className="p-6 border rounded-xl">
+              <h3 className="font-semibold text-lg mb-2">Fast Delivery</h3>
+              <p className="text-gray-600">Rapid development cycles with focus on MVPs and measurable milestones.</p>
+            </div>
+            <div className="p-6 border rounded-xl">
+              <h3 className="font-semibold text-lg mb-2">SEO-First Development</h3>
+              <p className="text-gray-600">We implement technical SEO best-practices from day one so your site can rank faster.</p>
+            </div>
+            <div className="p-6 border rounded-xl">
+              <h3 className="font-semibold text-lg mb-2">Clear Communication</h3>
+              <p className="text-gray-600">Regular updates, dedicated project managers and accountability at every step.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Client logos */}
+      <section className="py-10 bg-gray-50">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+          <h3 className="text-lg text-gray-700 mb-6">Trusted by</h3>
+          <div className="flex items-center justify-center gap-8 flex-wrap">
+            <img src="/project-placeholder.svg" alt="client" className="w-36 h-auto opacity-90" />
+            <img src="/project-placeholder.svg" alt="client" className="w-36 h-auto opacity-90" />
+            <img src="/project-placeholder.svg" alt="client" className="w-36 h-auto opacity-90" />
+            <img src="/project-placeholder.svg" alt="client" className="w-36 h-auto opacity-90" />
           </div>
         </div>
       </section>

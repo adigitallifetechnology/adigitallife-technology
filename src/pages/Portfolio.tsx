@@ -175,10 +175,9 @@ const Portfolio = () => {
                 className="bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2 border border-gray-100"
               >
                   <div className={`relative overflow-hidden ${project.bgColor} h-48 flex items-center justify-center`}>
-                  <div className={`${project.iconColor} transition-transform duration-300 hover:scale-110`}>
-                    {project.icon}
-                  </div>
-                  <div className="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent opacity-0 hover:opacity-100 transition-opacity duration-300 flex items-end">
+                    <img src="/project-placeholder.svg" alt={project.title} className="w-full h-full object-cover" />
+                    <div className={`${project.iconColor} absolute left-4 top-4 transition-transform duration-300 hover:scale-110`}>{project.icon}</div>
+                    <div className="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent opacity-0 hover:opacity-100 transition-opacity duration-300 flex items-end">
                     <div className="p-4">
                       <a
                         href={project.url}

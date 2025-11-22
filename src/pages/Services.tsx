@@ -90,6 +90,26 @@ const Services = () => {
           </div>
         </div>
       </section>
+      {/* FAQ Section */}
+      <section className="py-16 bg-white">
+        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+          <h2 className="text-2xl font-bold text-gray-900 mb-6">Frequently Asked Questions</h2>
+          <div className="space-y-4">
+            <div className="p-4 border rounded-lg">
+              <h3 className="font-semibold">How long does a typical project take?</h3>
+              <p className="text-gray-600">Project length depends on scope; simple sites can take 2-4 weeks, complex platforms 2+ months. We deliver incremental milestones for faster value.</p>
+            </div>
+            <div className="p-4 border rounded-lg">
+              <h3 className="font-semibold">Do you provide ongoing support?</h3>
+              <p className="text-gray-600">Yes — we provide maintenance, monitoring and performance optimization packages tailored to your needs.</p>
+            </div>
+            <div className="p-4 border rounded-lg">
+              <h3 className="font-semibold">Can you help improve our search rankings?</h3>
+              <p className="text-gray-600">Absolutely. We combine technical SEO, content strategy, and performance improvements to boost organic traffic over time.</p>
+            </div>
+          </div>
+        </div>
+      </section>
 
       {/* Main Services */}
       <section className="py-20 bg-white">

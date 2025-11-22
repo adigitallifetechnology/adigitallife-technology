@@ -57,11 +57,21 @@ const Footer = () => {
             </ul>
           </div>
         </div>
+        <div className="mt-8 pt-8">
+          <div className="max-w-3xl mx-auto mb-6">
+            <h4 className="text-lg font-semibold text-white mb-3">Join our newsletter</h4>
+            <p className="text-gray-400 mb-4">Get monthly tips on web growth, SEO and security.</p>
+            <form className="flex gap-2 justify-center">
+              <input type="email" placeholder="Your email" className="px-4 py-2 rounded-l-lg w-64 text-gray-900" />
+              <button className="bg-brand-orange px-4 py-2 rounded-r-lg text-white font-semibold">Subscribe</button>
+            </form>
+          </div>
 
-        <div className="border-t border-gray-700 mt-8 pt-8 text-center">
+          <div className="border-t border-gray-700 mt-8 pt-8 text-center">
           <p className="text-gray-300">
             © 2025 ADigitallife Technology. All rights reserved.
           </p>
+          </div>
         </div>
       </div>
     </footer>
