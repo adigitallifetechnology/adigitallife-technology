@@ -253,6 +253,55 @@ const Services = () => {
           </Link>
         </div>
       </section>
+
+      {/* FAQ & Case Studies */}
+      <section className="py-20 bg-gray-50">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center mb-12">
+            <h2 className="text-3xl font-bold text-gray-900 mb-4">Frequently Asked Questions</h2>
+            <p className="text-gray-600 max-w-3xl mx-auto">Answers to common questions about our services, pricing and delivery process.</p>
+          </div>
+
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+            <div>
+              <h3 className="font-semibold text-gray-900 mb-2">How long does a typical website project take?</h3>
+              <p className="text-gray-600 mb-4">Most brochure websites take 4–8 weeks. E-commerce and custom web apps depend on scope — we provide an estimated timeline after discovery.</p>
+
+              <h3 className="font-semibold text-gray-900 mb-2">Do you offer SEO services for new websites?</h3>
+              <p className="text-gray-600 mb-4">Yes — we include technical SEO, on-page optimization, and a content plan to make sure your website can be crawled and ranks well.</p>
+            </div>
+
+            <div>
+              <h3 className="font-semibold text-gray-900 mb-2">What industries do you serve?</h3>
+              <p className="text-gray-600 mb-4">We work with healthcare, legal, e-commerce, travel, and enterprise clients. Our portfolio showcases cross-industry experience.</p>
+
+              <h3 className="font-semibold text-gray-900 mb-2">How do you price your services?</h3>
+              <p className="text-gray-600">We provide fixed-scope quotes for defined projects and retainer models for ongoing SEO and maintenance work.</p>
+            </div>
+          </div>
+
+          <div className="mt-12">
+            <h2 className="text-2xl font-bold text-gray-900 mb-6">Selected Case Studies</h2>
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+              <div className="bg-white rounded-xl shadow p-4">
+                <img src="/project-placeholder.svg" alt="Case study" className="w-full rounded mb-4" />
+                <h4 className="font-semibold text-gray-900">Ovihams E‑commerce</h4>
+                <p className="text-gray-600">Built an online store with optimized checkout flow and SEO; improved conversion by 45%.</p>
+              </div>
+              <div className="bg-white rounded-xl shadow p-4">
+                <img src="/project-placeholder.svg" alt="Case study" className="w-full rounded mb-4" />
+                <h4 className="font-semibold text-gray-900">Forescribe AI Platform</h4>
+                <p className="text-gray-600">Delivered a scalable web app integrated with AI services for content generation and analytics.</p>
+              </div>
+              <div className="bg-white rounded-xl shadow p-4">
+                <img src="/project-placeholder.svg" alt="Case study" className="w-full rounded mb-4" />
+                <h4 className="font-semibold text-gray-900">Clavius Legal</h4>
+                <p className="text-gray-600">Designed a professional services website to capture leads and streamline client intake.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
     </div>
   );
 };

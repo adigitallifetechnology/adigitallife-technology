@@ -1,3 +1,31 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+/* Brand tweaks and small utility helpers */
+:root{
+	--brand-orange: #ff6a00;
+	--brand-black: #0b0b0b;
+}
+
+html,body,#root{
+	height:100%;
+}
+
+body{
+	background: var(--brand-black);
+	color: #111827;
+	-webkit-font-smoothing:antialiased;
+	-moz-osx-font-smoothing:grayscale;
+}
+
+.site-container{
+	max-width: 1200px;
+	margin-left: auto;
+	margin-right: auto;
+	padding-left: 1rem;
+	padding-right: 1rem;
+}
+
+.brand-cta{ background: linear-gradient(90deg,var(--brand-orange),#ff8a3d); }
+

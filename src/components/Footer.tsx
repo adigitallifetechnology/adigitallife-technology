@@ -37,7 +37,6 @@ const Footer = () => {
               <li><a href="/contact" className="text-gray-300 hover:text-brand-orange transition-colors duration-200">Contact</a></li>
             </ul>
           </div>
-
           {/* Contact Info */}
           <div>
             <h3 className="text-lg font-semibold mb-4">Contact Info</h3>
@@ -55,6 +54,15 @@ const Footer = () => {
                 <span className="text-gray-300">New Delhi</span>
               </li>
             </ul>
+          </div>
+          {/* Newsletter */}
+          <div>
+            <h3 className="text-lg font-semibold mb-4">Newsletter</h3>
+            <p className="text-gray-300 mb-4">Get monthly insights on web development, SEO tips and security best practices.</p>
+            <form className="flex gap-2" onSubmit={(e)=>e.preventDefault()}>
+              <input type="email" placeholder="Your email" className="px-3 py-2 rounded-l-lg w-full text-gray-900" />
+              <button className="bg-brand-orange text-white px-4 py-2 rounded-r-lg">Subscribe</button>
+            </form>
           </div>
         </div>
         <div className="mt-8 pt-8">
