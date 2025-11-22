@@ -3,7 +3,7 @@ import { Mail, Phone, MapPin } from 'lucide-react';
 
 const Footer = () => {
   return (
-    <footer className="bg-gray-900 text-white">
+    <footer className="bg-brand-black text-white">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
         <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
           {/* Company Info */}
@@ -16,7 +16,7 @@ const Footer = () => {
               />
               <div>
                 <span className="text-xl font-bold text-white">ADigitallife</span>
-                <span className="block text-xs text-orange-300 font-medium tracking-wide">TECHNOLOGY</span>
+                <span className="block text-xs text-brand-orange font-medium tracking-wide">TECHNOLOGY</span>
               </div>
             </div>
             <p className="text-gray-300 mb-6 leading-relaxed">
@@ -30,11 +30,11 @@ const Footer = () => {
           <div>
             <h3 className="text-lg font-semibold mb-4">Quick Links</h3>
             <ul className="space-y-2">
-              <li><a href="/" className="text-gray-300 hover:text-orange-500 transition-colors duration-200">Home</a></li>
-              <li><a href="/about" className="text-gray-300 hover:text-orange-500 transition-colors duration-200">About</a></li>
-              <li><a href="/services" className="text-gray-300 hover:text-orange-500 transition-colors duration-200">Services</a></li>
-              <li><a href="/portfolio" className="text-gray-300 hover:text-orange-500 transition-colors duration-200">Portfolio</a></li>
-              <li><a href="/contact" className="text-gray-300 hover:text-orange-500 transition-colors duration-200">Contact</a></li>
+              <li><a href="/" className="text-gray-300 hover:text-brand-orange transition-colors duration-200">Home</a></li>
+              <li><a href="/about" className="text-gray-300 hover:text-brand-orange transition-colors duration-200">About</a></li>
+              <li><a href="/services" className="text-gray-300 hover:text-brand-orange transition-colors duration-200">Services</a></li>
+              <li><a href="/portfolio" className="text-gray-300 hover:text-brand-orange transition-colors duration-200">Portfolio</a></li>
+              <li><a href="/contact" className="text-gray-300 hover:text-brand-orange transition-colors duration-200">Contact</a></li>
             </ul>
           </div>
 

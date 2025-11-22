@@ -47,6 +47,15 @@ const Services = () => {
     }
   ];
 
+  const slugMap: Record<string, string> = {
+    'Web Development': 'web-development',
+    'App Development': 'app-development',
+    'ERP/CRM Software': 'erp-crm-software',
+    'SEO & Digital Marketing': 'seo',
+    'Cyber Security Audits': 'cyber-security',
+    'IT Consulting': 'it-consulting'
+  };
+
   const additionalServices = [
     { icon: <Server className="w-6 h-6" />, title: 'Cloud Solutions', description: 'Scalable cloud infrastructure and migration services' },
     { icon: <Palette className="w-6 h-6" />, title: 'UI/UX Design', description: 'User-centered design for exceptional experiences' },
@@ -68,14 +77,8 @@ const Services = () => {
   return (
     <div>
       {/* Hero Section */}
-      <section className="relative bg-gradient-to-br from-blue-600 to-purple-700 text-white py-20 overflow-hidden">
-        <div 
-          className="absolute inset-0 bg-cover bg-center bg-no-repeat opacity-20"
-          style={{
-            backgroundImage: 'url(https://images.pexels.com/photos/3184360/pexels-photo-3184360.jpeg?auto=compress&cs=tinysrgb&w=1920)'
-          }}
-        ></div>
-        <div className="absolute inset-0 bg-gradient-to-br from-blue-600/80 to-purple-700/80"></div>
+      <section className="relative bg-brand-black text-white py-20 overflow-hidden">
+        <div className="absolute inset-0 bg-black opacity-60"></div>
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <div className="relative z-10">
             <h1 className="text-4xl md:text-5xl font-bold mb-6">
@@ -92,11 +95,9 @@ const Services = () => {
       <section className="py-20 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
-            <img
-              src="https://images.pexels.com/photos/3184339/pexels-photo-3184339.jpeg?auto=compress&cs=tinysrgb&w=1200"
-              alt="Our services"
-              className="w-full h-80 object-cover rounded-2xl shadow-2xl mb-8"
-            />
+            <div className="w-full h-80 rounded-2xl shadow-2xl mb-8 overflow-hidden bg-brand-gray flex items-center justify-center">
+              <h3 className="text-3xl font-semibold text-white">Professional Digital Services — Black & Orange</h3>
+            </div>
           </div>
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
             {services.map((service, index) => (
@@ -133,12 +134,15 @@ const Services = () => {
                     {service.technologies.map((tech, techIndex) => (
                       <span
                         key={techIndex}
-                        className="bg-blue-100 text-blue-800 text-sm px-3 py-1 rounded-full"
+                        className="bg-brand-orange/10 text-brand-orange text-sm px-3 py-1 rounded-full"
                       >
                         {tech}
                       </span>
                     ))}
                   </div>
+                </div>
+                <div className="mt-6">
+                  <Link to={`/services/${slugMap[service.title] || service.title.toLowerCase().replace(/\s+/g, '-')}`} className="inline-block bg-brand-orange text-white px-4 py-2 rounded-md font-semibold">Learn more</Link>
                 </div>
               </div>
             ))}
@@ -164,7 +168,7 @@ const Services = () => {
                 key={index}
                 className="bg-white p-6 rounded-xl shadow-md hover:shadow-lg transition-shadow duration-300"
               >
-                <div className="text-orange-500 mb-4">
+                <div className="text-brand-orange mb-4">
                   {service.icon}
                 </div>
                 <h3 className="text-lg font-semibold text-gray-900 mb-2">
@@ -213,7 +217,7 @@ const Services = () => {
       </section>
 
       {/* CTA Section */}
-      <section className="py-20 bg-gradient-to-r from-orange-500 to-red-500 text-white">
+      <section className="py-20 bg-brand-orange text-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <h2 className="text-3xl md:text-4xl font-bold mb-4">
             Ready to Start Your Project?
@@ -223,7 +227,7 @@ const Services = () => {
           </p>
           <Link
             to="/contact"
-            className="bg-white text-orange-500 hover:bg-gray-100 px-8 py-4 rounded-lg font-semibold text-lg transition-all duration-200 transform hover:scale-105 inline-block"
+            className="bg-brand-black text-white hover:bg-black/90 px-8 py-4 rounded-lg font-semibold text-lg transition-all duration-200 transform hover:scale-105 inline-block"
           >
             Get Free Consultation
           </Link>

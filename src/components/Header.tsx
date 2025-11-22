@@ -19,7 +19,7 @@ const Header = () => {
   };
 
   return (
-    <header className="bg-white shadow-md sticky top-0 z-50">
+    <header className="bg-brand-black shadow-md sticky top-0 z-50">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center py-4">
           {/* Logo */}
@@ -31,8 +31,8 @@ const Header = () => {
                 className="h-10 w-auto filter drop-shadow-sm"
               />
               <div className="hidden sm:block">
-                <span className="text-xl font-bold text-gray-800">ADigitallife</span>
-                <span className="block text-xs text-orange-500 font-medium tracking-wide">TECHNOLOGY</span>
+                <span className="text-xl font-bold text-white">ADigitallife</span>
+                <span className="block text-xs text-brand-orange font-medium tracking-wide">TECHNOLOGY</span>
               </div>
             </div>
           </Link>
@@ -43,8 +43,8 @@ const Header = () => {
               <Link
                 key={item.name}
                 to={item.href}
-                className={`text-gray-700 hover:text-orange-500 px-3 py-2 text-sm font-medium transition-colors duration-200 ${
-                  location.pathname === item.href ? 'text-orange-500 border-b-2 border-orange-500' : ''
+                className={`text-gray-300 hover:text-brand-orange px-3 py-2 text-sm font-medium transition-colors duration-200 ${
+                  location.pathname === item.href ? 'text-brand-orange border-b-2 border-brand-orange' : ''
                 }`}
               >
                 {item.name}
@@ -56,7 +56,7 @@ const Header = () => {
           <div className="md:hidden">
             <button
               onClick={toggleMenu}
-              className="text-gray-700 hover:text-orange-500 focus:outline-none focus:text-orange-500"
+              className="text-gray-300 hover:text-brand-orange focus:outline-none focus:text-brand-orange"
             >
               {isMenuOpen ? <X size={24} /> : <Menu size={24} />}
             </button>

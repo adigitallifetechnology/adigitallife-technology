@@ -77,21 +77,15 @@ const Contact = () => {
   return (
     <div>
       {/* Hero Section */}
-      <section className="relative bg-gradient-to-br from-blue-600 to-purple-700 text-white py-20 overflow-hidden">
-        <div 
-          className="absolute inset-0 bg-cover bg-center bg-no-repeat opacity-20"
-          style={{
-            backgroundImage: 'url(https://images.pexels.com/photos/3184291/pexels-photo-3184291.jpeg?auto=compress&cs=tinysrgb&w=1920)'
-          }}
-        ></div>
-        <div className="absolute inset-0 bg-gradient-to-br from-blue-600/80 to-purple-700/80"></div>
+      <section className="relative bg-brand-black text-white py-20 overflow-hidden">
+        <div className="absolute inset-0 bg-black opacity-60"></div>
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <div className="relative z-10">
             <h1 className="text-4xl md:text-5xl font-bold mb-6">
               Get In Touch
             </h1>
             <p className="text-xl md:text-2xl max-w-3xl mx-auto leading-relaxed">
-              Ready to transform your business? Let's discuss your project and create something amazing together.
+              Ready to transform your business with web development, SEO or cybersecurity services? Let's discuss your project and create measurable results.
             </p>
           </div>
         </div>
@@ -101,11 +95,9 @@ const Contact = () => {
       <section className="py-20 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
-            <img
-              src="https://images.pexels.com/photos/3184465/pexels-photo-3184465.jpeg?auto=compress&cs=tinysrgb&w=1200"
-              alt="Contact us"
-              className="w-full h-64 object-cover rounded-2xl shadow-2xl"
-            />
+            <div className="w-full h-64 rounded-2xl shadow-2xl overflow-hidden bg-brand-gray flex items-center justify-center">
+              <h3 className="text-2xl font-semibold text-white">Contact Our Team — Web Development, SEO & Cyber Security</h3>
+            </div>
           </div>
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
             {/* Contact Form */}
@@ -226,7 +218,7 @@ const Contact = () => {
 
                   <button
                     type="submit"
-                    className="w-full bg-orange-500 hover:bg-orange-600 text-white px-8 py-4 rounded-lg font-semibold text-lg transition-all duration-200 transform hover:scale-105 flex items-center justify-center"
+                    className="w-full bg-brand-orange hover:bg-orange-600 text-white px-8 py-4 rounded-lg font-semibold text-lg transition-all duration-200 transform hover:scale-105 flex items-center justify-center"
                   >
                     Send Message
                     <Send className="ml-2 w-5 h-5" />

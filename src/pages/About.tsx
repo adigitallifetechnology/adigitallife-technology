@@ -76,14 +76,14 @@ const About = () => {
   return (
     <div>
       {/* Hero Section */}
-      <section className="relative bg-gradient-to-br from-blue-600 to-purple-700 text-white py-20 overflow-hidden">
+      <section className="relative bg-brand-black text-white py-20 overflow-hidden">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <div className="relative z-10">
             <h1 className="text-4xl md:text-5xl font-bold mb-6">
               About ADigitallife Technology
             </h1>
             <p className="text-xl md:text-2xl max-w-3xl mx-auto leading-relaxed">
-              Empowering businesses through innovative digital solutions since 2023
+              Empowering businesses with web development, SEO, cybersecurity and app development solutions since 2023.
             </p>
           </div>
         </div>
@@ -129,7 +129,7 @@ const About = () => {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-12">
             <div className="bg-white p-8 rounded-xl shadow-lg">
-              <div className="text-orange-500 mb-4">
+              <div className="text-brand-orange mb-4">
                 <Target className="w-12 h-12" />
               </div>
               <h3 className="text-2xl font-bold text-gray-900 mb-4">Our Mission</h3>
@@ -140,7 +140,7 @@ const About = () => {
               </p>
             </div>
             <div className="bg-white p-8 rounded-xl shadow-lg">
-              <div className="text-blue-500 mb-4">
+              <div className="text-brand-orange mb-4">
                 <Eye className="w-12 h-12" />
               </div>
               <h3 className="text-2xl font-bold text-gray-900 mb-4">Our Vision</h3>
@@ -172,7 +172,7 @@ const About = () => {
                 key={index}
                 className="text-center p-6 rounded-xl hover:shadow-lg transition-shadow duration-300"
               >
-                <div className="text-orange-500 mb-4 flex justify-center">
+                <div className="text-brand-orange mb-4 flex justify-center">
                   {value.icon}
                 </div>
                 <h3 className="text-xl font-semibold text-gray-900 mb-3">

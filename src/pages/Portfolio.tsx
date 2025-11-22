@@ -148,21 +148,15 @@ const Portfolio = () => {
   return (
     <div>
       {/* Hero Section */}
-      <section className="relative bg-gradient-to-br from-blue-600 to-purple-700 text-white py-20 overflow-hidden">
-        <div 
-          className="absolute inset-0 bg-cover bg-center bg-no-repeat opacity-20"
-          style={{
-            backgroundImage: 'url(https://images.pexels.com/photos/3184291/pexels-photo-3184291.jpeg?auto=compress&cs=tinysrgb&w=1920)'
-          }}
-        ></div>
-        <div className="absolute inset-0 bg-gradient-to-br from-blue-600/80 to-purple-700/80"></div>
+      <section className="relative bg-brand-black text-white py-20 overflow-hidden">
+        <div className="absolute inset-0 bg-black opacity-60"></div>
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <div className="relative z-10">
             <h1 className="text-4xl md:text-5xl font-bold mb-6">
               Our Portfolio
             </h1>
             <p className="text-xl md:text-2xl max-w-3xl mx-auto leading-relaxed">
-              Showcasing successful digital transformations and innovative solutions we've delivered for our clients
+              Handpicked case studies: web development, e-commerce, mobile apps, and SEO projects that drove measurable results.
             </p>
           </div>
         </div>
@@ -180,7 +174,7 @@ const Portfolio = () => {
                 key={project.id}
                 className="bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2 border border-gray-100"
               >
-                <div className={`relative overflow-hidden ${project.bgColor} h-48 flex items-center justify-center`}>
+                  <div className={`relative overflow-hidden ${project.bgColor} h-48 flex items-center justify-center`}>
                   <div className={`${project.iconColor} transition-transform duration-300 hover:scale-110`}>
                     {project.icon}
                   </div>
@@ -202,7 +196,7 @@ const Portfolio = () => {
                 <div className="p-6">
                   <div className="flex items-center justify-between mb-3">
                     <h3 className="text-xl font-bold text-gray-900">{project.title}</h3>
-                    <span className="bg-blue-100 text-blue-800 text-xs px-2 py-1 rounded-full">
+                    <span className="bg-brand-orange/10 text-brand-orange text-xs px-2 py-1 rounded-full">
                       {project.category}
                     </span>
                   </div>
@@ -217,7 +211,7 @@ const Portfolio = () => {
                       {project.services.map((service, index) => (
                         <span
                           key={index}
-                          className="bg-orange-100 text-orange-800 text-xs px-2 py-1 rounded-full"
+                          className="bg-brand-orange/10 text-brand-orange text-xs px-2 py-1 rounded-full"
                         >
                           {service}
                         </span>
