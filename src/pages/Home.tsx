@@ -84,7 +84,7 @@ const Home = () => {
           </div>
           <div className="order-1 md:order-2 flex items-center justify-center animate-slide-in-right">
               <img
-                src="/hero.jpg"
+                src="/illustrations/home-hero.svg"
                 alt="Hero illustration"
                 className="w-full max-w-lg"
                 onError={(e) => { (e.currentTarget as HTMLImageElement).src = '/hero-illustration.svg'; }}
@@ -184,18 +184,7 @@ const Home = () => {
         </div>
       </section>
 
-      {/* Client logos */}
-      <section className="py-10 bg-gradient-to-br from-gray-50 to-white">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <h3 className="text-lg text-gray-700 mb-6 font-semibold">Trusted by leading brands</h3>
-          <div className="flex items-center justify-center gap-8 flex-wrap">
-            <img src="/client-logos.svg" alt="client" className="w-36 h-auto opacity-70 hover:opacity-100 transition-opacity duration-300 hover:scale-110 transform" />
-            <img src="/client-logos.svg" alt="client" className="w-36 h-auto opacity-70 hover:opacity-100 transition-opacity duration-300 hover:scale-110 transform" />
-            <img src="/client-logos.svg" alt="client" className="w-36 h-auto opacity-70 hover:opacity-100 transition-opacity duration-300 hover:scale-110 transform" />
-            <img src="/client-logos.svg" alt="client" className="w-36 h-auto opacity-70 hover:opacity-100 transition-opacity duration-300 hover:scale-110 transform" />
-          </div>
-        </div>
-      </section>
+      {/* Client logos removed as requested */}
 
       {/* Stats Section */}
       <section className="relative py-20 bg-brand-black text-white overflow-hidden">

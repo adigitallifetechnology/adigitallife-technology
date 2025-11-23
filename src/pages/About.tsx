@@ -88,7 +88,7 @@ const About = () => {
           </div>
           <div className="flex items-center justify-center">
             <img
-              src="/about-hero.jpg"
+              src="/illustrations/about-illustration.svg"
               alt="About ADigitallife"
               className="w-full max-w-md rounded-xl shadow-lg"
               onError={(e) => { (e.currentTarget as HTMLImageElement).src = '/project-placeholder.svg'; }}

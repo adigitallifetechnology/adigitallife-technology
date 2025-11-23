@@ -90,7 +90,7 @@ const Services = () => {
           </div>
           <div className="flex items-center justify-center">
             <img
-              src="/services-hero.jpg"
+              src="/illustrations/services-illustration.svg"
               alt="Services hero"
               className="w-full max-w-md rounded-xl"
               onError={(e) => { (e.currentTarget as HTMLImageElement).src = '/hero-illustration.svg'; }}
