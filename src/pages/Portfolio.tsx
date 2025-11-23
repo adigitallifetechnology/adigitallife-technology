@@ -164,10 +164,10 @@ const Portfolio = () => {
               <img
                 src="/portfolio-hero.jpg"
                 alt="Portfolio hero"
-                className="w-full max-w-md rounded-xl relative z-0"
+                className="w-full max-w-lg rounded-xl relative z-0 object-contain h-auto"
                 onError={(e) => { (e.currentTarget as HTMLImageElement).src = '/project-placeholder.svg'; }}
               />
-              <div className="absolute inset-0 bg-black/60 rounded-xl z-10 pointer-events-none" />
+              <div className="absolute inset-0 bg-black/30 rounded-xl z-10 pointer-events-none" />
             </div>
           </div>
         </div>

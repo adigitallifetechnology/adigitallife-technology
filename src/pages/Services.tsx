@@ -90,13 +90,13 @@ const Services = () => {
           </div>
           <div className="flex items-center justify-center">
             <div className="relative">
-              <img
-                src="https://images.unsplash.com/photo-1551434678-e076c223a692?auto=format&fit=crop&w=1200&q=80"
-                alt="Services hero"
-                className="w-full max-w-md rounded-xl relative z-0 object-cover"
-                onError={(e) => { (e.currentTarget as HTMLImageElement).src = '/illustrations/services-illustration.svg'; }}
-              />
-              <div className="absolute inset-0 bg-black/60 rounded-xl z-10 pointer-events-none" />
+                <img
+                  src="https://images.unsplash.com/photo-1551434678-e076c223a692?auto=format&fit=crop&w=1200&q=80"
+                  alt="Services hero"
+                  className="w-full max-w-lg rounded-xl relative z-0 object-contain h-auto"
+                  onError={(e) => { (e.currentTarget as HTMLImageElement).src = '/illustrations/services-illustration.svg'; }}
+                />
+                <div className="absolute inset-0 bg-black/30 rounded-xl z-10 pointer-events-none" />
             </div>
           </div>
         </div>
