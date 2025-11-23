@@ -51,10 +51,10 @@ const Header = () => {
                     {item.name}
                   </Link>
                 ) : (
-                  <div key="services" className="relative group">
-                    <button className={`px-3 py-2 text-sm font-medium transition-colors duration-200 ${location.pathname.startsWith('/services') ? 'text-brand-orange border-b-2 border-brand-orange' : 'text-gray-300 hover:text-brand-orange'}`}>
-                      Services
-                    </button>
+                <div key="services" className="relative group">
+                  <Link to="/services" className={`px-3 py-2 text-sm font-medium transition-colors duration-200 ${location.pathname.startsWith('/services') ? 'text-brand-orange border-b-2 border-brand-orange' : 'text-gray-300 hover:text-brand-orange'}`}>
+                    Services
+                  </Link>
                     <div className="absolute right-0 mt-2 w-56 bg-brand-black rounded-md shadow-lg opacity-0 group-hover:opacity-100 pointer-events-none group-hover:pointer-events-auto transform translate-y-1 group-hover:translate-y-0 transition-all">
                       <div className="py-2">
                         <Link to="/services/web-development" className="block px-4 py-2 text-sm text-gray-200 hover:bg-gray-800">Web Development</Link>
