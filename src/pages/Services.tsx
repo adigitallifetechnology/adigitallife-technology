@@ -80,7 +80,7 @@ const Services = () => {
       <section className="relative bg-brand-black text-white py-20 overflow-hidden">
         <div className="absolute inset-0 bg-black opacity-60"></div>
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
-          <div className="relative z-10 text-left">
+          <div className="relative z-20 text-left">
             <h1 className="text-4xl md:text-5xl font-bold mb-6">
               Our Services
             </h1>
@@ -89,12 +89,15 @@ const Services = () => {
             </p>
           </div>
           <div className="flex items-center justify-center">
-            <img
-              src="/illustrations/services-illustration.svg"
-              alt="Services hero"
-              className="w-full max-w-md rounded-xl"
-              onError={(e) => { (e.currentTarget as HTMLImageElement).src = '/hero-illustration.svg'; }}
-            />
+            <div className="relative">
+              <img
+                src="/illustrations/services-illustration.svg"
+                alt="Services hero"
+                className="w-full max-w-md rounded-xl relative z-0"
+                onError={(e) => { (e.currentTarget as HTMLImageElement).src = '/hero-illustration.svg'; }}
+              />
+              <div className="absolute inset-0 bg-black/60 rounded-xl z-10 pointer-events-none" />
+            </div>
           </div>
         </div>
       </section>
