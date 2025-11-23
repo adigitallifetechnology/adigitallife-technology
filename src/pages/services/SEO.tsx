@@ -19,7 +19,7 @@ const SEOService = () => {
             </div>
           </div>
           <div className="flex items-center justify-center">
-            <img src="/illustrations/seo-illustration.svg" alt="SEO illustration" className="w-full max-w-md rounded-lg shadow-lg" onError={(e) => { (e.currentTarget as HTMLImageElement).src = '/hero-illustration.svg'; }} />
+            <img src="https://images.unsplash.com/photo-1554168265-2f8a9a2b1a15?auto=format&fit=crop&w=1200&q=80" alt="SEO analytics" className="w-full max-w-md rounded-lg shadow-lg object-cover" onError={(e) => { (e.currentTarget as HTMLImageElement).src = '/illustrations/seo-illustration.svg'; }} />
           </div>
         </div>
       </section>

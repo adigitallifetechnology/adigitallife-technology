@@ -19,7 +19,7 @@ const ITConsulting = () => {
             </div>
           </div>
           <div className="flex items-center justify-center">
-            <img src="/illustrations/it-consulting.svg" alt="IT consulting illustration" className="w-full max-w-md rounded-lg shadow-lg" onError={(e) => { (e.currentTarget as HTMLImageElement).src = '/project-placeholder.svg'; }} />
+            <img src="https://images.unsplash.com/photo-1521737604893-d14cc237f11d?auto=format&fit=crop&w=1200&q=80" alt="IT consulting" className="w-full max-w-md rounded-lg shadow-lg object-cover" onError={(e) => { (e.currentTarget as HTMLImageElement).src = '/illustrations/it-consulting.svg'; }} />
           </div>
         </div>
       </section>

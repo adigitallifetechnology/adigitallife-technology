@@ -88,10 +88,10 @@ const About = () => {
           </div>
           <div className="flex items-center justify-center">
             <img
-              src="/illustrations/about-illustration.svg"
+              src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?auto=format&fit=crop&w=1200&q=80"
               alt="About ADigitallife"
-              className="w-full max-w-md rounded-xl shadow-lg"
-              onError={(e) => { (e.currentTarget as HTMLImageElement).src = '/project-placeholder.svg'; }}
+              className="w-full max-w-md rounded-xl shadow-lg object-cover"
+              onError={(e) => { (e.currentTarget as HTMLImageElement).src = '/illustrations/about-illustration.svg'; }}
             />
           </div>
         </div>

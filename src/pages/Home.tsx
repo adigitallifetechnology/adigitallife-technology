@@ -83,12 +83,12 @@ const Home = () => {
             </div>
           </div>
           <div className="order-1 md:order-2 flex items-center justify-center animate-slide-in-right">
-              <img
-                src="/illustrations/home-hero.svg"
-                alt="Hero illustration"
-                className="w-full max-w-lg"
-                onError={(e) => { (e.currentTarget as HTMLImageElement).src = '/hero-illustration.svg'; }}
-              />
+                <img
+                  src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?auto=format&fit=crop&w=1200&q=80"
+                  alt="Hero visual"
+                  className="w-full max-w-lg rounded-lg object-cover"
+                  onError={(e) => { (e.currentTarget as HTMLImageElement).src = '/illustrations/home-hero.svg'; }}
+                />
           </div>
         </div>
       </section>

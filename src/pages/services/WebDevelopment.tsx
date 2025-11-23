@@ -20,7 +20,7 @@ const WebDevelopment = () => {
             </div>
           </div>
           <div className="flex items-center justify-center">
-            <img src="/illustrations/web-development.svg" alt="Web development illustration" className="w-full max-w-md rounded-lg shadow-lg" onError={(e) => { (e.currentTarget as HTMLImageElement).src = '/project-placeholder.svg'; }} />
+            <img src="https://images.unsplash.com/photo-1547658719-da2b51169166?auto=format&fit=crop&w=1200&q=80" alt="Web development" className="w-full max-w-md rounded-lg shadow-lg object-cover" onError={(e) => { (e.currentTarget as HTMLImageElement).src = '/illustrations/web-development.svg'; }} />
           </div>
         </div>
       </section>
