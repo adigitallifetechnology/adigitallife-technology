@@ -88,6 +88,36 @@ const Home = () => {
         </div>
       </section>
 
+      {/* About Section */}
+      <section className="py-20 bg-white">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
+            <div>
+              <h2 className="text-3xl font-bold text-gray-900 mb-4">About ADigitallife Technology</h2>
+              <p className="text-gray-700 mb-4 leading-relaxed">
+                ADigitallife Technology helps businesses grow online with results-driven web development, search engine optimization (SEO), cyber security and mobile apps.
+                We combine technical expertise with marketing insight to deliver digital products that perform — faster load times, stronger search visibility and clearer user journeys.
+              </p>
+
+              <ul className="grid grid-cols-1 sm:grid-cols-2 gap-3 text-gray-600 mb-6">
+                <li className="flex items-start"><span className="inline-block w-2 h-2 bg-brand-orange rounded-full mr-3 mt-2" />Expert web & app development</li>
+                <li className="flex items-start"><span className="inline-block w-2 h-2 bg-brand-orange rounded-full mr-3 mt-2" />SEO & growth marketing</li>
+                <li className="flex items-start"><span className="inline-block w-2 h-2 bg-brand-orange rounded-full mr-3 mt-2" />Security & compliance audits</li>
+                <li className="flex items-start"><span className="inline-block w-2 h-2 bg-brand-orange rounded-full mr-3 mt-2" />IT strategy & consulting</li>
+              </ul>
+
+              <div>
+                <a href="/about" className="inline-block bg-brand-orange text-white px-6 py-3 rounded-lg font-semibold">Learn more about us</a>
+              </div>
+            </div>
+
+            <div className="flex items-center justify-center">
+              <img src="/project-placeholder.svg" alt="About ADigitallife" className="w-full max-w-md rounded-lg shadow-lg" />
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* Services Section */}
       <section className="py-20 bg-gradient-to-br from-gray-50 to-gray-100 relative overflow-hidden">
         <div className="absolute top-0 right-0 w-96 h-96 bg-brand-orange rounded-full opacity-5 blur-3xl"></div>
