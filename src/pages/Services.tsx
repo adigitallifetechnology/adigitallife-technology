@@ -79,14 +79,22 @@ const Services = () => {
       {/* Hero Section */}
       <section className="relative bg-brand-black text-white py-20 overflow-hidden">
         <div className="absolute inset-0 bg-black opacity-60"></div>
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <div className="relative z-10">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
+          <div className="relative z-10 text-left">
             <h1 className="text-4xl md:text-5xl font-bold mb-6">
               Our Services
             </h1>
-            <p className="text-xl md:text-2xl max-w-3xl mx-auto leading-relaxed">
+            <p className="text-xl md:text-2xl max-w-3xl leading-relaxed">
               Comprehensive digital solutions designed to transform your business
             </p>
+          </div>
+          <div className="flex items-center justify-center">
+            <img
+              src="/services-hero.jpg"
+              alt="Services hero"
+              className="w-full max-w-md rounded-xl"
+              onError={(e) => { (e.currentTarget as HTMLImageElement).src = '/hero-illustration.svg'; }}
+            />
           </div>
         </div>
       </section>

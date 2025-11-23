@@ -83,7 +83,12 @@ const Home = () => {
             </div>
           </div>
           <div className="order-1 md:order-2 flex items-center justify-center animate-slide-in-right">
-            <img src="/hero-illustration.svg" alt="Hero illustration" className="w-full max-w-lg animate-float" />
+              <img
+                src="/hero.jpg"
+                alt="Hero illustration"
+                className="w-full max-w-lg"
+                onError={(e) => { (e.currentTarget as HTMLImageElement).src = '/hero-illustration.svg'; }}
+              />
           </div>
         </div>
       </section>
