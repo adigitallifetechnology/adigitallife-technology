@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Mail, Phone, MapPin, Clock, Send, CheckCircle } from 'lucide-react';
+import { Mail, Phone, MapPin, Clock, Send, CheckCircle, Linkedin, Instagram, Twitter } from 'lucide-react';
 
 const Contact = () => {
   const [formData, setFormData] = useState({
@@ -252,6 +252,39 @@ const Contact = () => {
                     </div>
                   </div>
                 ))}
+              </div>
+
+              <div className="mb-8">
+                <h3 className="font-semibold text-gray-900 mb-4">Follow Us</h3>
+                <div className="flex space-x-4">
+                  <a
+                    href="https://www.linkedin.com/in/adigitallife-technology-a8910332b/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="flex items-center justify-center w-12 h-12 rounded-full bg-gray-100 text-gray-700 hover:bg-brand-orange hover:text-white transition-all duration-200"
+                    aria-label="LinkedIn"
+                  >
+                    <Linkedin className="w-6 h-6" />
+                  </a>
+                  <a
+                    href="https://www.instagram.com/adigitallifetechnology/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="flex items-center justify-center w-12 h-12 rounded-full bg-gray-100 text-gray-700 hover:bg-brand-orange hover:text-white transition-all duration-200"
+                    aria-label="Instagram"
+                  >
+                    <Instagram className="w-6 h-6" />
+                  </a>
+                  <a
+                    href="https://x.com/Adigitalli51707"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="flex items-center justify-center w-12 h-12 rounded-full bg-gray-100 text-gray-700 hover:bg-brand-orange hover:text-white transition-all duration-200"
+                    aria-label="Twitter"
+                  >
+                    <Twitter className="w-6 h-6" />
+                  </a>
+                </div>
               </div>
 
               {/* Map Placeholder */}

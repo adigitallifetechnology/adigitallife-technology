@@ -1,5 +1,5 @@
 import React from 'react';
-import { Mail, Phone, MapPin } from 'lucide-react';
+import { Mail, Phone, MapPin, Linkedin, Instagram, Twitter } from 'lucide-react';
 
 const Footer = () => {
   return (
@@ -20,10 +20,38 @@ const Footer = () => {
               </div>
             </div>
             <p className="text-gray-300 mb-6 leading-relaxed">
-              Empowering businesses through innovative digital solutions. We transform ideas into 
+              Empowering businesses through innovative digital solutions. We transform ideas into
               powerful digital experiences that drive growth and success.
             </p>
-            {/* Social icons removed */}
+            <div className="flex space-x-4">
+              <a
+                href="https://www.linkedin.com/in/adigitallife-technology-a8910332b/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-gray-300 hover:text-brand-orange transition-colors duration-200"
+                aria-label="LinkedIn"
+              >
+                <Linkedin className="w-6 h-6" />
+              </a>
+              <a
+                href="https://www.instagram.com/adigitallifetechnology/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-gray-300 hover:text-brand-orange transition-colors duration-200"
+                aria-label="Instagram"
+              >
+                <Instagram className="w-6 h-6" />
+              </a>
+              <a
+                href="https://x.com/Adigitalli51707"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-gray-300 hover:text-brand-orange transition-colors duration-200"
+                aria-label="Twitter"
+              >
+                <Twitter className="w-6 h-6" />
+              </a>
+            </div>
           </div>
 
           {/* Quick Links */}
